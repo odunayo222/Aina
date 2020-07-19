@@ -1,0 +1,177 @@
+*{
+    font-family: "Gabriela", Arial, Helvetica, sans-serif;
+}
+header{
+    background-image: url("../img/p.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+li>a:hover{
+    color: burlywood;
+    /* border-bottom: 3px solid red; */
+}
+
+
+.section{
+    min-height: 600px;
+}
+.datepicker-modal{
+    zoom: 80%;
+}
+.timepicker-modal{
+    zoom: 80%;
+}
+.or{
+    margin-left: 20px;
+}
+.modal{
+    margin-top: 30px;
+}
+.timepicker-digital-display , .datepicker-date-display{
+    background-color: black;
+}
+
+.timepicker-close, .datepicker-cancel, .datepicker-done{
+    color: black;
+}
+
+.datepicker-table td.is-selected{
+    background-color: black;
+    color: white;
+}
+.timepicker-canvas-bearing, .timepicker-canvas-bg{fill:black;}
+
+.timepicker-canvas line{
+    stroke: black;
+}
+.timepicker-tick{
+    color: white;
+}
+.timepicker-plate{
+    background-color: rgb(122, 118, 118);
+}
+.justify{
+    text-align: justify;
+}
+section{
+    min-height: 600px;
+}
+#about{
+    background-color: beige;
+    padding: 30px;
+}
+.img{
+    padding-top: 20px;
+    border-radius: 50px 0px;
+}
+.fab{
+    font-size: 20px;
+    padding: 5px;
+}
+.icon{
+    color: white;
+}
+#return-to-top{
+  position: fixed;
+bottom: 20px;
+right: 20px;
+width: 50px;
+height: 50px;
+display: block;
+   text-decoration: none;
+   display: none;
+}
+.responsive-text{
+    position: relative;
+}
+
+#card{
+    margin-left: 30%;
+    width: 40%;
+    border-radius: 40px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: -120px;
+}
+.bold{
+    font-weight: bold !important;
+}
+#btn-large{
+    margin-left: 60px;
+    width: 65%;
+    border-radius: 35px;
+    margin-top: 20px;
+}
+main{
+    margin-bottom: 150px;
+}
+#card-sm{
+    margin-top: 20px;
+}
+@media screen and (max-width: 600px){
+    .header-text a{
+        display: inline-block;
+        width: 50%;
+        border-radius: 100px;
+    }
+    #book{
+        width:80%;
+        margin-top: 10px;
+    }
+    .tab a{
+        font-size: 10px !important;
+    }
+}
+@media screen and (max-width: 320px){
+    .collection{
+        font-size: 10px !important;
+    }
+}
+@media screen and (max-width: 379px){
+   .modal{
+       width: 95%;
+   }
+   .book{
+       font-size: 20px;
+       font-weight: bold;
+   }
+}
+.btn{
+    border-radius: 100px;
+}
+@media screen and (min-width: 1200px){
+    .modal{
+        overflow: hidden; 
+    }
+    
+}
+@media screen and (max-width: 420px){
+    .header-text h3{
+        font-size: 38px;
+        
+    }
+    .header-text{
+        margin-top: -80px;
+    }
+    
+}
+@media screen and (min-width: 768px){
+    .header-text h3{
+        font-size: 60px;
+        
+    }
+    
+    
+}
+
+.collection{
+    padding-top: 40px;
+}
+.collection h5{
+    padding: 20px;
+}
+.collection{
+    margin-top: 50px;
+}
