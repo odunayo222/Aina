@@ -69,11 +69,11 @@ login();
 // }
 
 // or this method
-window.addEventListener('load', () =>{
-    // if('serviceWorker' in navigator){
-    //     navigator.serviceWorker.register("./sw.js")
-    //     console.log('Service worker is registered')
-    // } else{
-    //     console.log('Service worker is not registered')
-    // }
-})
+// window.addEventListener('load', () =>{
+//     // if('serviceWorker' in navigator){
+//     //     navigator.serviceWorker.register("./sw.js")
+//     //     console.log('Service worker is registered')
+//     // } else{
+//     //     console.log('Service worker is not registered')
+//     // }
+// })

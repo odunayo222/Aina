@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
   // username, email, telephone and password
   if (username === null && email === null && telephone === null && password === null){
     // if it does not have send user back to login
-    window.location.href = '/login.html';
+    window.location.href = './login.html';
   }else{
     // if it has update dashboard page dynamically from the values gotten
     dynamicUsername.textContent = JSON.parse(username);

@@ -25,7 +25,7 @@ handleSignin.addEventListener('submit', (e) => {
     lnames.value = '';
     telephone.value = '';
     password.value = '';
-    window.location.href = '/dashboard.html';
+    window.location.href = './dashboard.html';
   }
 
 })

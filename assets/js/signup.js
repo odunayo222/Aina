@@ -20,7 +20,7 @@ handleSignup.addEventListener('submit', (e) => {
     email.value = '';
     telephone.value = '';
     password.value = '';
-    window.location.href = '/sdashboard.html';
+    window.location.href = './sdashboard.html';
   }
 
 })

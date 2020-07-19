@@ -35,30 +35,30 @@
       font-size: 25px;
       margin-left: -80px !important;
     }
+    @media screen and (max-width: 414px){
+      .card-lg{
+      margin-top: 0px !important;
+    }
+    }
     .img-lg{
       margin-left: 30px !important;
     }
     .card-lg{
       margin-top: 130px;
     }
-    .card-sm{
-      margin-top: 100px;
-    }
-    .customer-sm{
-      font-size: 19px;
-    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="card card-lg z-depth-3 hide-on-med-and-down">
+    <div class="card card-lg z-depth-3">
       <div class="card-content">
-        <h5 class="center-align"><b>Welcome! You have successfully Signup</b></h5>
+        <h5 class="center-align"><b>Welcome! You have successfully Login</b></h5>
         <div class="row">
           <div class="col s12 l7">
-            <img src="assets/img/people.png" class="responsive-img img-lg">
+            <img src="assets/img/people.png" class="responsive-img img-lg hide-on-med-and-down">
+            <img src="assets/img/people.png" class="responsive-img hide-on-large-only">
           </div>
-          <div class="col s12 l5 customer-lg">
+          <div class="col s12 l5 customer-lg push-s4 push-m2">
             <p><b>Username: </b><span id="dynamic_username"></span></p>
             <p><b>Telephone:</b> <span id="dynamic_tel"></span></p>
           </div>
@@ -66,21 +66,6 @@
       </div>
     </div>
 
-    <div class="card card-sm z-depth-3 hide-on-large-only">
-      <div class="card-content">
-        <h5 class="center-align"><b>Welcome! You have successfully Login</b></h5>
-        <div class="row">
-          <div class="col s12 l7">
-            <img src="assets/img/people.png" class="responsive-img">
-          </div>
-          <div class="col s12 l5 customer-sm">
-            <p><b>Username: </b><span id="dynamic_username"></span></p>
-            <p><b>Telephone:</b> <span id="dynamic_tel"></span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/materialize.min.js"></script>
