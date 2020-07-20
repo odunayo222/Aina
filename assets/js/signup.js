@@ -9,18 +9,27 @@ handleSignup.addEventListener('submit', (e) => {
 
   if (!username.value || !email.value || !telephone.value || !password.value) {
     // validation to check if nothing is entered before submitting
-    console.log('values are required');
-  } else {
+    document.getElementById("error").innerHTML = `<b style="color: red;">Values are required</b>`
+  } 
+  else if(password.value.length < 8){
+    document.getElementById("psd-error").innerHTML = `<b style="color: red;">Password must be at least 8 characters</b>`
+  }
+  else if(telephone.value.length < 11) {
+    document.getElementById("tel-error").innerHTML = `<b style="color: red;">Telephone number must be at least 11 numbers</b>`
+  } else if(telephone.value.length > 14) {
+    document.getElementById("tel-error").innerHTML = `<b style="color: red;">Telephone number must not be more than 14 numbers</b>`
+  }
+  else {
     localStorage.setItem('username', username.value);
     localStorage.setItem('email', email.value)
     localStorage.setItem('telephone', telephone.value);
     localStorage.setItem('password', password.value);
-    alert('Account created successfully');
+     document.getElementById("success").innerHTML = `<b style="color: green;">Account created successfully. Login to make your orders</b>`
     username.value = '';
     email.value = '';
     telephone.value = '';
     password.value = '';
-    window.location.href = './sdashboard.html';
+   
   }
 
 })

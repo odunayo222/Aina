@@ -88,8 +88,8 @@ display: block;
 }
 
 #card{
-    margin-left: 30%;
-    width: 40%;
+    margin-left: 27%;
+    width: 50%;
     border-radius: 40px;
     padding: 10px;
     font-weight: bold;
@@ -119,6 +119,7 @@ main{
     #book{
         width:80%;
         margin-top: 10px;
+        
     }
     .tab a{
         font-size: 10px !important;
@@ -139,6 +140,9 @@ main{
    }
 }
 .btn{
+    border-radius: 10px;
+}
+.btn-header{
     border-radius: 100px;
 }
 @media screen and (min-width: 1200px){

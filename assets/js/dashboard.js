@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
   // assign variable to display user data dynamically
   const dynamicUsername = document.getElementById('dynamic_username');
   const dynamic_tel = document.getElementById('dynamic_tel');
+  const dynamic_email = document.querySelector("#dynamic_email")
   const dynamic_address = document.getElementById('dynamic_address');
 
 
@@ -27,6 +28,7 @@ window.addEventListener('load', () => {
     dynamicUsername.textContent = username;
     dynamic_tel.textContent = telephone;
     dynamic_address.textContent = address;
+    
 
   }
 });
@@ -39,4 +41,7 @@ handleProfile.addEventListener('submit', function(e){
     localStorage.setItem('address', address.value);
     location.reload();
   }
+})
+dynamic_email.addEventListener('load', function () {
+  dynamic_email.textContent = email;
 })
