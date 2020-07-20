@@ -14,18 +14,17 @@ const password = localStorage.getItem('password');
 handleSignin.addEventListener('submit', (e) => {
   e.preventDefault();
   // check if there is no input entered from user
-  if (!lnames.value || !ltelephone.value || !lpassword.value) {
-    console.log('values are required');
-  } else if(JSON.stringify(lnames.value) !== username && JSON.stringify(telephone.value) !== telephone && JSON.stringify(password.value) !== password){
-    // check if what the user entered does not matches
-    //  what is been stored on localstorage
-    alert('Account not registered with Aina Kitchen. Please signup');
-  } else{
-    // if what the user matches redirect the user to dashboard page
+  if(lnames.length <= 0 || lpassword.length <= 0 || ltelephone.length <= 0){
+    alert('All fields are required');
+  }
+  if (lnames.value != username || lpassword.value != password || ltelephone.value != telephone){
+    alert('Incorrect credentials');
+  }
+  if (lnames.value == username && lpassword.value == password && ltelephone.value == telephone){
     lnames.value = '';
-    telephone.value = '';
-    password.value = '';
-    window.location.href = './dashboard.html';
+    lpassword.value = '';
+    ltelephone.value = '';
+    location.href = './dashboard.html'; 
   }
 
 })
