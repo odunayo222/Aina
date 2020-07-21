@@ -29,51 +29,60 @@
   <meta name="theme-color" content="#ffffff">
   <title>Aina Kitchen | Dashboard</title>
   <style>
-    .customer-lg{
-      margin-top: 70px;
-      line-height: 50px;
-      font-size: 25px;
-      margin-left: -80px !important;
+    .circle{
+      min-height: 150px !important;
+      border-radius: 100px;
+      width: 240px !important;
+    }ul{
+      color: white !important;
     }
-    @media screen and (max-width: 414px){
-      .card-lg{
-      margin-top: 0px !important;
-    }
-    }
-    .img-lg{
-      margin-left: 30px !important;
-    }
-    .card-lg{
-      margin-top: 130px;
+    .hide-on-large-only{
+      background-image: url(assets/img/ogbono.jpeg);
+      min-height: 400px;
+      background-position: center;
+      background-size: cover;
+      min-width: 100%;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card card-lg z-depth-3">
-      <div class="card-content">
-        <h5 class="center-align"><b>Welcome! You have successfully Login</b></h5>
-        <div class="row">
-          <div class="col s12 l7">
-            <img src="assets/img/people.png" class="responsive-img img-lg hide-on-med-and-down">
-            <img src="assets/img/people.png" class="responsive-img hide-on-large-only">
-          </div>
-          <div class="col s12 l5 customer-lg push-s4 push-m2">
-            <p><b>Username: </b><span id="dynamic_username"></span></p>
-            <p><b>Telephone:</b> <span id="dynamic_tel"></span></p>
-            <p><b>Address:</b> <span id="dynamic_address"></span></p>
-          </div>
-        </div>
-        <form id="handleProfile">
-          <label for="">Address</label>
-          <input type="text" id="address">
-          <button type="submit">Update</button>
-        </form>
-      </div>
-    </div>
+  <div class="container hide-on-large-only">
+    <a href="#!" class="sidenav-trigger" data-target="side"><i class="material-icons white-text" style="padding: 20px; font-size: 35px !important;">menu</i></a>
+  </div>
+  <ul class="sidenav sidenav-fixed red z-depth-0 ">
+    <h5 class="white-text center-align">Aina Kitchen</h5>
+    <li><div class="user-view"
+      <a href="#!"><img src="assets/img/ogbono.jpeg" class="circle" style="display: block; margin: auto;" height: 400px"></a>
+      <p class="center-align white-text"><b></b><span id="dynamic_username"></span></p>
+    </div></li>
+    <li><a href="#!" class="white-text"><i class="material-icons white-text">view_list</i>Dashboard</a></li>
+    <li><a href="#!" class="white-text"><i class="material-icons white-text">perm_identity</i>Profile</a></li>
+    <li><a href="#!" class="white-text"><i class="material-icons white-text">shopping_cart</i>Cart</a></li>
+    <li><a href="#!" class="white-text"><i class="material-icons white-text">notifications</i>Notifications</a></li>
+    <li><a href="./login.html" class="white-text" style="margin-top: 80px;">Log out <i class="material-icons white-text right" >arrow_forward</i></a></li>
+  </ul>
+  <ul class="sidenav red" id="side">
+    <h5 class="white-text center-align">Aina Kitchen <i class="material-icons right sidenav-close" style="padding-right: 10px">close</i></h5>
+    <li><div class="user-view"
+      <a href="#!"><img src="assets/img/ogbono.jpeg" class="circle" style="display: block; margin: auto;" height: 400px"></a>
+      <p class="center-align white-text"><b></b><span id="dynamic_username"></span></p>
+    </div></li>
+    <li><a href="#!" class="white-text"><i class="material-icons white-text">view_list</i>Dashboard</a></li>
+    <li><a href="#!" class="white-text"><i class="material-icons white-text">perm_identity</i>Profile</a></li>
+    <li><a href="#!" class="white-text"><i class="material-icons white-text">shopping_cart</i>Cart</a></li>
+    <li><a href="#!" class="white-text"><i class="material-icons white-text">notifications</i>Notifications</a></li>
+    <li><a href="./login.html" class="white-text" style="margin-top: 100px;">Log out <i class="material-icons white-text right" >arrow_forward</i></a></li>
+    
+  </ul>
+
 
 </body>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/materialize.min.js"></script>
 <script src="./assets/js/dashboard.js"></script>
+<script>
+   $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
 </html>
