@@ -4,6 +4,9 @@ const email = document.getElementById("mail");
 const telephone = document.getElementById("telephone");
 const username = document.getElementById("user_name");
 
+const storedUsername = localStorage.getItem('username');
+const storedEmail = localStorage.getItem('email');
+
 handleSignup.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -18,6 +21,10 @@ handleSignup.addEventListener('submit', (e) => {
     document.getElementById("tel-error").innerHTML = `<b style="color: red;">Telephone number must be at least 11 numbers</b>`
   } else if(telephone.value.length > 14) {
     document.getElementById("tel-error").innerHTML = `<b style="color: red;">Telephone number must not be more than 14 numbers</b>`
+  } else if(storedUsername === username.value) {
+      document.getElementById("u-error").innerHTML = `<b style="color: red;">Username taken</b>`
+  } else if (storedEmail === email.value) {
+    document.getElementById("e-error").innerHTML = `<b style="color: red;">Email used</b>`
   }
   else {
     localStorage.setItem('username', username.value);
