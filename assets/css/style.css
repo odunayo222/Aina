@@ -1,11 +1,13 @@
 *{
-    font-family: "Gabriela", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 header{
     background-image: url("../img/p.jpg");
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
+    filter: brightness(63%);
     
 }
 li>a:hover{
@@ -120,6 +122,10 @@ main{
         width:80%;
         margin-top: 10px;
         
+    }
+    #book:hover{
+        background-color: red !important;
+        color: white !important;
     }
     .tab a{
         font-size: 10px !important;
