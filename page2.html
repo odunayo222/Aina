@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/fonts/material-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/materialize.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
   <link rel="manifest" href="/manifest.json">
   <!-- ios-support -->
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
@@ -29,88 +29,96 @@
   <meta name="theme-color" content="#ffffff">
   <title>Aina Kitchen | Dashboard</title>
   <style>
-   @media screen and (min-width: 1000px){
-    body{
-      padding-left: 300px !important;
+    @media screen and (min-width: 1000px){
+     body{
+       padding-left: 300px !important;
+     }
     }
-   }
-    .circle{
-      min-height: 175px !important;
-      border-radius: 100px;
-      width: 240px !important;
-    }ul{
-      color: white !important;
-    }
-    .container{
-      margin:0 auto;
-      max-width:1280px;
-      width:90%;
-    }
-    @media only screen and (min-width: 601px){
-      .container{
-        width:70%};
-      }
-    @media only screen and (min-width: 993px){
-      .container{
-        width:90%
-      }
-    }
-  </style>
+     ul{
+       color: white !important;
+     }
+     .container{
+       margin:0 auto;
+       max-width:1280px;
+       width:90%;
+     }
+     @media only screen and (min-width: 601px){
+       .container {
+         width:70%
+       }
+       }
+     @media only screen and (min-width: 993px){
+       .container {
+         width:90%;
+       }
+     }
+     img .avatar{
+       width: 100%;
+       max-width: 150px;
+       max-height: 70px;
+       display: block;
+      
+     }
+     .categories{
+       padding: 20px !important;
+       border-radius: 25px !important;
+     }
+     .card-image img{
+       min-height: 230px !important;
+     }
+   </style>
 </head>
 <body>
-    <div class="container hide-on-large-only">
-        <a href="#!" class="sidenav-trigger" data-target="side"><i class="material-icons red-text" style="padding: 20px; font-size: 35px !important;">menu <span class="center-align" style="padding: 20px;">Dashboard</span></i></a>
-    </div>
-    <ul class="sidenav sidenav-fixed red z-depth-0 ">
+  <div class="container hide-on-large-only">
+    <a href="#!" class="sidenav-trigger" data-target="side"><i class="material-icons red-text" style="padding: 20px; font-size: 35px !important;">menu</i><span class="center-align red-text" style="padding: 20px; text-align: center !important;font-size: 35px !important;">Dashboard</span></a>
+  </div>
+  <ul class="sidenav sidenav-fixed red z-depth-0 ">
     <img src="assets/img/logo.png" style="margin: auto; display: block;">
     <li><div class="user-view">
-        <a href="#!"><img src="assets/img/avatar.png" class="avatar circle" style="border-radius: 50%;"></a>
-        <p class="center-align white-text"><b><span id="dynamic_username"></span></b></p>
+      <a href="#!"><img src="assets/img/avatar.png" class="avatar responsive-img"></a>
+      <p class="center-align white-text"><b><span id="dynamic_username-lg"></span></b></p>
     </div></li>
     <li class="active white"><a href="#!" class="red-text"><i class="material-icons red-text">home</i>Dashboard</a></li>
     <li><a href="#!" class="white-text"><i class="material-icons white-text">perm_identity</i>Profile</a></li>
     <li><a href="#!" class="white-text"><i class="material-icons white-text">shopping_cart</i>Cart</a></li>
     <li><a href="#!" class="white-text"><i class="material-icons white-text">notifications</i>Notifications</a></li>
-    <li><a href="./login.html" class="white-text" style="margin-top: 70px;">Log out <i class="material-icons white-text left" >arrow_backward</i></a></li>
-    </ul>
-    <ul class="sidenav red" id="side">
+    <li><a href="./login.html" class="white-text">Log out <i class="material-icons white-text left" >arrow_backward</i></a></li>
+  </ul>
+  <ul class="sidenav red" id="side">
     <img src="assets/img/logo.png" style="margin: auto; display: block;"> 
     <li><div class="user-view">
-        <a href="#!"><img src="assets/img/avatar.png" class="avatar circle" style="border-radius: 50%;"></a>
-        <p class="center-align white-text"><b><span id="dynamic_username"></span></b></p>
+      <a href="#!"><img src="assets/img/avatar.png" class="avatar responsive-img"></a>
+      <p class="center-align white-text"><b><span id="dynamic_username-sm"></span></b></p>
     </div></li>
     <li class="active white"><a href="#!" class="red-text"><i class="material-icons red-text">home</i>Dashboard</a></li>
     <li><a href="#!" class="white-text"><i class="material-icons white-text">perm_identity</i>Profile</a></li>
     <li><a href="#!" class="white-text"><i class="material-icons white-text">shopping_cart</i>Cart</a></li>
     <li><a href="#!" class="white-text"><i class="material-icons white-text">notifications</i>Notifications</a></li>
-    <li><a href="./login.html" class="white-text" style="margin-top: 70px;">Log out <i class="material-icons white-text left" >arrow_backward</i></a></li>
+    <li><a href="./login.html" class="white-text" style="margin-top: 9px;">Log out <i class="material-icons white-text left" >arrow_backward</i></a></li>
     
-    </ul>
+  </ul>
   <main>
     <div class="container">
       <h4>Categories</h4>
       <div class="row">
         <div class="col s12 l4">
-          <div class="card">
+          <div class="card categories z-depth-2">
             <div class="card-content">
-              <p>BREAKFAST</p>
-              <p class="right-align"><i class="material-icons" style="font-size: 30px;">restaurant</i></p>
+              <p>BREAKFAST <i class="material-icons right">restaurant</i></p>
             </div>
           </div>
         </div>
         <div class="col s12 l4">
-          <div class="card">
+          <div class="card categories z-depth-2">
             <div class="card-content">
-              <p>LUNCH</p>
-              <p class="right-align"><i class="material-icons" style="font-size: 30px;">restaurant</i></p>
+              <p>LUNCH <i class="material-icons right">restaurant</i></p>
             </div>
           </div>
         </div>
         <div class="col s12 l4">
-          <div class="card">
+          <div class="card categories z-depth-2">
             <div class="card-content">
-              <p>DINNER</p>
-              <p class="right-align"><i class="material-icons" style="font-size: 30px;">restaurant</i></p>
+              <p>DINNER <i class="material-icons right">restaurant</i></p>
             </div>
           </div>
         </div>

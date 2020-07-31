@@ -13,7 +13,9 @@ li>a:hover{
     color: burlywood;
     /* border-bottom: 3px solid red; */
 }
-
+div .hoverable{
+    height: 300px !important;
+  }
 
 .section{
     min-height: 600px;
