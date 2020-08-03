@@ -27,6 +27,7 @@ handleSignup.addEventListener('submit', (e) => {
     document.getElementById("e-error").innerHTML = `<b style="color: red;">Email used</b>`
   }
   else {
+    alert("Account created successfully. Login to make your orders");
     localStorage.setItem('username', username.value);
     localStorage.setItem('email', email.value)
     localStorage.setItem('telephone', telephone.value);
